@@ -33,6 +33,7 @@ namespace Ejemplo
             string Nombre = TextBoxNombre.Text;     
             int Edad = int.Parse(TextBoxEdad.Text); // tomamos el TextBoxEdad y lo asignamos a la variable Edad 
             PersonaAgregada(new Persona(Rut, Nombre, Edad));    // Creamos una persona y la agregamos mediante el metodo descrito por el delegete en Form1
+            this.Close();       // Cerrar ventana
         }
     }
 }

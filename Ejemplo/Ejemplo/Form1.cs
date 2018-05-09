@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace Ejemplo
 {
@@ -77,5 +80,12 @@ namespace Ejemplo
             ButtonRegistrar.Visible = true;
         }
 
+        private static void GuardarSimulacion(List<Persona> simulacion, string direccion)
+        {
+            FileStream fs = new FileStream(direccion, FileMode.Create);
+            IFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(fs, simulacion);
+            fs.Close();
+        }
     }
 }
