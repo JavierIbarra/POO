@@ -87,5 +87,31 @@ namespace Ejemplo
             formatter.Serialize(fs, simulacion);
             fs.Close();
         }
+
+        // -------------------------- Guardar ListaPersona --------------------------------
+
+        private void ButtonGuarda_Click(object sender, EventArgs e)
+        {
+
+            SaveFileDialog buscar = new SaveFileDialog();
+            buscar.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+
+            if (buscar.ShowDialog(this) != DialogResult.OK)
+            {
+
+            }
+            else
+            {
+                string direccion = buscar.FileName;
+                try
+                {
+                    GuardarSimulacion(ListaPersonas, direccion);
+                }
+                catch
+                {
+                    MessageBox.Show("ERROR : No se a podido guardar");
+                }
+            }
+        }
     }
 }

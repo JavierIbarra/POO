@@ -1,0 +1,11 @@
+C:\Users\jaiba\source\repos\Ejemplo2\Registro\bin\Debug\Registro.dll
+C:\Users\jaiba\source\repos\Ejemplo2\Registro\bin\Debug\Registro.pdb
+C:\Users\jaiba\source\repos\Ejemplo2\Registro\obj\Debug\Registro.csprojAssemblyReference.cache
+C:\Users\jaiba\source\repos\Ejemplo2\Registro\obj\Debug\Registro.csproj.CoreCompileInputs.cache
+C:\Users\jaiba\source\repos\Ejemplo2\Registro\obj\Debug\Registro.dll
+C:\Users\jaiba\source\repos\Ejemplo2\Registro\obj\Debug\Registro.pdb
+C:\Escritorio\Ejemplo2\Registro\bin\Debug\Registro.dll
+C:\Escritorio\Ejemplo2\Registro\bin\Debug\Registro.pdb
+C:\Escritorio\Ejemplo2\Registro\obj\Debug\Registro.csproj.CoreCompileInputs.cache
+C:\Escritorio\Ejemplo2\Registro\obj\Debug\Registro.dll
+C:\Escritorio\Ejemplo2\Registro\obj\Debug\Registro.pdb
