@@ -1,13 +1,10 @@
 Como Crear y Utilizar una Libreria(.dll):
 
-- Para crear una libreria debes crear un nuevo proyecto del tipo "Biblioteca de clases(.NET Framework)" y agreagarlo 
-a la solucion.
+- Para crear una libreria debes crear un nuevo proyecto del tipo "Biblioteca de clases(.NET Framework)" y agreagarlo a la solucion.
 
-- Para utilizar la libreria debes compilar el proyecto de la libreria y agregarla en la referencia de tu proyecto 
-principal.
+- Para utilizar la libreria debes compilar el proyecto de la libreria y agregarla en la referencia de tu proyecto principal.
 
-- Cada vez que quieras hacer un cambio en la libreria "Registro" se debe compilar la libreria y luego ejecutar
-el progrema 
+- Cada vez que quieras hacer un cambio en la libreria "Registro" se debe compilar la libreria y luego ejecutar el programa 
 
 Ejemplo 2:
 
