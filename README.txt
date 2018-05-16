@@ -8,7 +8,7 @@ Como Crear y Utilizar una Libreria(.dll):
 
 Ejemplo 2:
 
-La idea de este ejemplo es calcular su un rut es valido. (https://es.wikipedia.org/wiki/Rol_%C3%9Anico_Tributario)
+La idea de este ejemplo es calcular si un rut es valido. (https://es.wikipedia.org/wiki/Rol_%C3%9Anico_Tributario)
 
 La solucion "Ejemplo2" contiene 2 proyectos ("Ejemplo2" y "Registro") de los cuales uno es una libreria.
 
