@@ -65,7 +65,7 @@ namespace Ejemplo3
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void AbrirFormularioPanel(object Formhijo)
+        private void AbrirFormularioPanel(object Formhijo)      // Mostrar Formulario en el panel
         {
             if (this.panelContenedor.Controls.Count > 0)
             {

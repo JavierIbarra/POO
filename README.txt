@@ -1,18 +1,25 @@
-Como Crear y Utilizar una Libreria(.dll):
+Utilizar Reflection (DLL):
 
-- Para crear una libreria debes crear un nuevo proyecto del tipo "Biblioteca de clases(.NET Framework)" y agreagarlo a la solucion.
+- Para utilizar reflection es necesario saber la ubicación del archivo DLL(Generalmente se agrega en la carpeta "\bin\Debug" del proyecto).
 
-- Para utilizar la libreria debes compilar el proyecto de la libreria y agregarla en la referencia de tu proyecto principal.
+- Es necesario agregar using "System.Reflection"
 
-- Cada vez que quieras hacer un cambio en la libreria "Registro" se debe compilar la libreria y luego ejecutar el programa 
+- También es bueno utilizar el using "System.IO" para mostrar los errores.
 
-Ejemplo 2:
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Carpeta Ejemplo 3:
 
-La idea de este ejemplo es calcular si un rut es valido. (https://es.wikipedia.org/wiki/Rol_%C3%9Anico_Tributario)
+- La solución "Ejemplo3" contiene 3 ventanas ("Form1" , "AgregarPersona" y "DiagramaClases").
 
-La solucion "Ejemplo2" contiene 2 proyectos ("Ejemplo2" y "Registro") de los cuales uno es una libreria.
+- El DLL "NuevoModelo.dll" se encuentra en la carpeta "\Ejemplo3\bin\Debug".
 
-El proyectro "Ejemplo2" utiliza la libreria "Registro".
+- En la ventana "AgregarPersona.cs" se explica como se hace para utilizar los métodos del DLL.
 
-En la libreria "Registro" se encuentra la clase "Persona" que contiene el metodo "VerificarRut".
+- En la ventana "DiagramaClases.cs" se explica como leer los datos del DLL
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Carpeta Nuevo Modelo:
+
+- Este es el proyecto con el que construí el "NuevoModelo.dll".
+
+- El modelo contiene 2 clases ("Persona" y "Car")

@@ -14,8 +14,8 @@ namespace Ejemplo3
 {
     public partial class AgregarPersona : Form
     {
-        Assembly asm;   // Inicializamos el Assembly(Para habrir el DLL)
-        Type tipos;     // Inicializamos el Tipo (Para habrir la clase que se encuentra en el DLL)
+        Assembly asm;   // Inicializamos el Assembly(Para abrir el DLL)
+        Type tipos;     // Inicializamos el Tipo (Para abrir la clase que se encuentra en el DLL)
         object objeto;
         string Nombre;
         string Apellido;
@@ -28,10 +28,10 @@ namespace Ejemplo3
 
             try
             {
-                asm = Assembly.LoadFile(Application.StartupPath + "\\NuevoModelo.dll");     // Habrimos el DLL ubicado en la carpeta Debug de la aplicacion
-                tipos = asm.GetType("NuevoModelo.Persona");                                 // Selecionamos la clase a utilizar (Debemos saber las clases existentes en el DLL)
+                asm = Assembly.LoadFile(Application.StartupPath + "\\NuevoModelo.dll");     // Abrimos el DLL ubicado en la carpeta Debug de la aplicación
+                tipos = asm.GetType("NuevoModelo.Persona");                                 // Seleccionamos  la clase a utilizar (Debemos saber las clases existentes en el DLL)
             }
-            catch (FileNotFoundException ex)    // En caso de algun error
+            catch (FileNotFoundException ex)    // En caso de algún error
             {
                 MessageBox.Show(ex.Message);    // Mostramos el error en pantalla
             }
@@ -44,8 +44,8 @@ namespace Ejemplo3
             Rut = textBoxRut.Text;               // Asignando textos a las variables
             Edad = int.Parse(textBoxEdad.Text);  // Asignando textos a las variables
 
-            objeto = Agregar(Nombre, Apellido, Rut, Edad);                                 // Llamamos a la funcion Agregar 
-            string valor = UtilizarMetodos(objeto, "NombreCompleto", "Resultado");         // Llamamos a la funcion UtilizarMetodos( objeto, metodo que queremos utilizar, metodo con el cual obtenemos el valor creado generalmente es un metodo get)
+            objeto = Agregar(Nombre, Apellido, Rut, Edad);                                 // Llamamos a la función Agregar 
+            string valor = UtilizarMetodos(objeto, "NombreCompleto", "Resultado");         // Llamamos a la función UtilizarMetodos( objeto, método que queremos utilizar, método con el cual obtenemos el valor creado generalmente es un método get)
             labelNombreCompleto.Text += " " + valor;                                       // Mostramos en pantalla
         }
 
@@ -58,18 +58,18 @@ namespace Ejemplo3
 
         private string UtilizarMetodos(object objeto, string metodoUtilizado, string metodoRecuperador)     // Con esta funcion utilizamos los metodo de la clase
         {
-            MethodInfo NombreCompleto = tipos.GetMethod(metodoUtilizado);  // Llamamos al metodo "NombreCompleto" de la Clase utilizada en la variable "tipos"
-            NombreCompleto.Invoke(objeto, null);                            // Invocamos el metodo pasando el objeto y los parametos necesarios
+            MethodInfo NombreCompleto = tipos.GetMethod(metodoUtilizado);  // Llamamos al método "NombreCompleto" de la Clase utilizada en la variable "tipos"
+            NombreCompleto.Invoke(objeto, null);                            // Invocamos el método pasando el objeto y los parámetos necesarios
 
-            /* Ejemplo (Si el metodo utiliza parametros):
+            /* Ejemplo (Si el método utiliza parametros):
             
             object[] parametro = new object[] {nombre,apellido};
             NombreCompleto.Invoke(objeto, parametro);
            
              */
 
-            PropertyInfo nombreCompleto = tipos.GetProperty(metodoRecuperador);     // Llamamos al metodo "Resultado" y lo asignamos a una variable 
-            return (string)nombreCompleto.GetValue(objeto);                         // Mediante el metodo "Resultado" obtenemos el valor creado por el metodo "NombreCompleto" 
+            PropertyInfo nombreCompleto = tipos.GetProperty(metodoRecuperador);     // Llamamos al método "Resultado" y lo asignamos a una variable 
+            return (string)nombreCompleto.GetValue(objeto);                         // Mediante el método "Resultado" obtenemos el valor creado por el método "NombreCompleto" 
 
         }
     }

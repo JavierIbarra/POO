@@ -21,9 +21,9 @@ namespace Ejemplo3
         public DiagramaClases()
         {
             InitializeComponent();
-            numero = 0;                             // numero para recorer Tipos
+            numero = 0;                             // Numero para recorrer Tipos
             Tipos = Ensamblado.GetTypes();          // Asignamos todos los tipos del DLL a la variable "Tipos"
-            MetodosAtributos(numero);               // Llamamos a la funcion MetodosAtributos
+            MetodosAtributos(numero);               // Llamamos a la función MetodosAtributos
         }
 
         private void DiagramaClases_Load(object sender, EventArgs e)
@@ -40,25 +40,25 @@ namespace Ejemplo3
 
         private void ClaseAnt_Click(object sender, EventArgs e) // Boton Siguiente
         {
-            if (numero > 0)             // Comprobamos que pertenesca al recorrido posible
+            if (numero > 0)             // Comprobamos que pertenezca al recorrido posible
             {
                 numero -= 1;                    
-                MetodosAtributos(numero);       // Llamamos a la funcion MetodosAtributos
+                MetodosAtributos(numero);       // Llamamos a la función MetodosAtributos
             }
         }
 
         private void ClaseSig_Click(object sender, EventArgs e)     
         {
-            if (numero < Tipos.Length - 1)       // Comprobamos que pertenesca al recorrido posible
+            if (numero < Tipos.Length - 1)       // Comprobamos que pertenezca al recorrido posible
             {
                 numero += 1;
-                MetodosAtributos(numero);       // Llamamos a la funcion MetodosAtributos
+                MetodosAtributos(numero);       // Llamamos a la función MetodosAtributos
             }
         }
 
         private void MetodosAtributos(int numero)
         {
-            if (numero < Tipos.Length && 0 <= numero)   // Comprobamos el recorido disponible
+            if (numero < Tipos.Length && 0 <= numero)   // Comprobamos el recorrido disponible
             {
                 NClase.Text = "" + Tipos[numero];   // Señalamos la clase en pantalla
                 listMetodos.Items.Clear();          // Borramos las listas de los listBox
@@ -81,13 +81,13 @@ namespace Ejemplo3
                 ConstructorInfo[] constructores = Tipos[numero].GetConstructors();      // Obtenemos los constructores de un Tipo
                 foreach (ConstructorInfo constructor in constructores)                  // Recorremos los constructores del Tipo
                 {
-                    listparametros.Items.Add(constructor.ToString());                   // Mostramos los constuctores
+                    listparametros.Items.Add(constructor.ToString());                   // Mostramos los constructores
                     listparametros.Items.Add("****************************************************************************************************************************************************************************************************************");
 
-                    ParameterInfo[] parametrosConstructor = constructor.GetParameters();    // Mostramos los parametros del constructor
-                    foreach (ParameterInfo parametro in parametrosConstructor)              // Recorremos los parametros
+                    ParameterInfo[] parametrosConstructor = constructor.GetParameters();    // Mostramos los parámetros del constructor
+                    foreach (ParameterInfo parametro in parametrosConstructor)              // Recorremos los parámetros
                     {
-                        listparametros.Items.Add(parametro);                    // Mostramos el parametro
+                        listparametros.Items.Add(parametro);                    // Mostramos el parámetro
                     }
                 }
 
