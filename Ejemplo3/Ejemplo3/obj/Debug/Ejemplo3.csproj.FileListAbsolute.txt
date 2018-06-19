@@ -1,0 +1,12 @@
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\obj\Debug\Ejemplo3.csprojAssemblyReference.cache
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\obj\Debug\Ejemplo3.DiagramaClases.resources
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\obj\Debug\Ejemplo3.Form1.resources
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\obj\Debug\Ejemplo3.Properties.Resources.resources
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\obj\Debug\Ejemplo3.csproj.GenerateResource.cache
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\obj\Debug\Ejemplo3.csproj.CoreCompileInputs.cache
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\bin\Debug\Ejemplo3.exe.config
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\bin\Debug\Ejemplo3.exe
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\bin\Debug\Ejemplo3.pdb
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\obj\Debug\Ejemplo3.exe
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\obj\Debug\Ejemplo3.pdb
+D:\Visual Studio\GitHub\Ejemplo3\Ejemplo3\obj\Debug\Ejemplo3.AgregarPersona.resources
