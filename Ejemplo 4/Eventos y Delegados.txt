@@ -1,0 +1,30 @@
+Class 1
+
+// Definimos delegate
+public delegate void restringirCompra(Product producto); 
+
+// Inicializamos delegate en "Class Program"
+ public static restringirCompra RestringirCompra;  
+
+// Creamos el delegate en el "Main" dándole una función a utilizar("Comprobar")
+RestringirCompra = new restringirCompra(Comprobar);
+
+// Definimos la función que utilizara el delegate
+// Tambien los parametros de la funcion("Product")
+public void Comprobar(Product producto){
+	.
+	.
+	.
+	}
+
+
+Class 2
+
+// Definimos el evento
+ public event restringirCompra restringirCompra; 
+
+// Igualamos el evento al delegate enviado desde la Class 1
+restringirCompra = RestringirCompra;
+
+// Utilizamos el evento igualado para llamar a la función definida por el delegate (Class 1)
+restringirCompra(producto);
